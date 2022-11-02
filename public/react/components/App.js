@@ -28,7 +28,6 @@ export const App = () => {
 	
 	
 	const handleSubmit = async (e) => {
-		e.preventDefault();
 		console.log(e)
 		const response = await fetch(`${apiURL}/wiki`, {
   		method: "POST",
@@ -88,7 +87,7 @@ export const App = () => {
 				<PagesList pages={pages} setPages={setPages} />
 			}
 			
-			<button onClick={() => setIsAddingArticle(!isAddingArticle)}> Create Page</button>
+			<button onClick={() => setIsAddingArticle(!isAddingArticle)}> Create Article</button>
 
 			
 		</main>

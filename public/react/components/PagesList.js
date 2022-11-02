@@ -28,14 +28,23 @@ export const PagesList = ({pages, setPages}) => {
 		} catch (err) {
 			console.log("Oh no an error! ", err)
 		}
-	}  
+	} 
+	
+	const deleteArticle = async (slug) => {
+		const response = await fetch(`${apiURL}/wiki/${slug}`, {
+  		method: "DELETE"
+		});
+		await response.json();
+	}
+	
 	return <>
 		{articlePage ?
 			<div>
 			<h3>Author : {articlePage.title}</h3>
 			<h3>Published: </h3>
 			<h3>Content: {articlePage.content}</h3>	
-			<button onClick={() => {goBack()}}>Back to Wiki List</button>		
+			<button onClick={() => {deleteArticle(articlePage.slug)}}>Delete Article</button>
+			<button onClick={() => {goBack()}}>Back to Wiki List</button>	
 			</div>
 			:
 			pages.map((page, idx) => {
