@@ -30,13 +30,13 @@ export const App = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		console.log(e)
-		const response = await fetch('`${apiURL}/wiki`', {
+		const response = await fetch(`${apiURL}/wiki`, {
   		method: "POST",
 		headers: {
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify(
-			articleData = {title: '', content: '', name: "", email: "", tags: ""} // our data TO CREATE here
+			{title: title, content: content, name: name, email: email, tags: tags} // our data TO CREATE here
   		)
 	});
 	const data = await response.json();
