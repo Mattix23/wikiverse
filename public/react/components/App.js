@@ -7,6 +7,7 @@ import apiURL from '../api';
 export const App = () => {
 
 	const [pages, setPages] = useState([]);
+	const [isAddingArticle, setIsAddingArticle] = useState(false)
 
 	async function fetchPages(){
 		try {
@@ -26,7 +27,35 @@ export const App = () => {
 		<main>	
       <h1>WikiVerse</h1>
 			<h2>An interesting 📚</h2>
-			<PagesList pages={pages} />
+			{
+				isAddingArticle ? 
+				<div>
+					<form>
+						<h4>Add an Article</h4>
+						<input type='text'
+						placeholder='Title'
+						aria-label='title'/>
+						<input type='text'
+						placeholder='Article Content'
+						aria-label='article content'/>
+						<input type='text'
+						placeholder='Author Name'
+						aria-label='author name'/>
+						<input type='text'
+						placeholder='Author Email'
+						aria-label='author email'/>
+						<input type='text'
+						placeholder='Tags'
+						aria-label='tags'/>
+					</form>
+					
+				</div>
+				: 
+				<PagesList pages={pages} setPages={setPages} />
+			}
+			<button onClick={() => setIsAddingArticle(!isAddingArticle)}> Create Page</button>
+
+			
 		</main>
 	)
 }
