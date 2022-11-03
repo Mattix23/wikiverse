@@ -47,11 +47,11 @@ export const App = () => {
 
 	return (
 		<main>	
-			<div class="jumbotron jumbotron-fluid">
-  			<div class="container">
+			<div className="jumbotron jumbotron-fluid">
+  			<div className="container">
     		<img src='https://thumbs.dreamstime.com/b/project-complex-like-puzzle-pictured-as-word-project-puzzle-pieces-to-show-project-can-be-difficult-needs-164219955.jpg' alt='Project text image'/>
-			<h2 class="display-4">WikiVerse Project</h2>
-    		<p class="lead">Welcome to my WikiVerse project, below you will find a list of articles and other button functionalities.</p>
+			<h2 className="display-4">WikiVerse Project</h2>
+    		<p className="lead">Welcome to my WikiVerse project, below you will find a list of articles and other button functionalities.</p>
   			</div>
 			</div>
 			<div className='homePage'>
