@@ -39,14 +39,14 @@ export const PagesList = ({pages, setPages}) => {
 	
 	return <>
 		{articlePage ?
-			<div>
+			<div className='list'>
 			<h2 className='title'>Title : {articlePage.title}</h2>	
 			<h3 className='author'>Author : {articlePage.author.name}</h3>
 			<h4 className='published'>Published: {articlePage.createdAt}</h4>
 			<h4 className='content'>Content: {articlePage.content}</h4>
 			<h4 className='tags'>Tags: {articlePage.tags.map((tag) => {return  <div>{tag.name}<br/></div>})}</h4>		
-			<button onClick={() => {deleteArticle(articlePage.slug)}}>Delete Article</button>
-			<button onClick={() => {goBack()}}>Back to Wiki List</button>	
+			<button className='button1' onClick={() => {deleteArticle(articlePage.slug)}}>Delete Article</button>
+			<button className='button2' onClick={() => {goBack()}}>Back to Wiki List</button>	
 			</div>
 			:
 			pages.map((page, idx) => {

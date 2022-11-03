@@ -117,7 +117,7 @@ export const App = () => {
           <PagesList pages={pages} setPages={setPages} />
         )}
 
-        <button onClick={() => setIsAddingArticle(!isAddingArticle)}>
+        <button className="button3" onClick={() => setIsAddingArticle(!isAddingArticle)}>
           {" "}
           Create Article
         </button>

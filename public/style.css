@@ -37,7 +37,7 @@ color: rgb(1, 1, 1);
 border-style: groove;
 }
 .author {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-style: groove;
   
 }
@@ -58,4 +58,23 @@ border-style: groove;
 }
 .lead {
   border-style: solid;
+}
+
+.list {
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.button2 {
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 61.5%;
+}
+.button1 {
+  color: white;
+}
+
+.button3 {
+  color: white;
+  padding: .6%;
+  border-top-color: black;
 }
