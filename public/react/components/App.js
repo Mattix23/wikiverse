@@ -54,7 +54,7 @@ export const App = () => {
             src="https://thumbs.dreamstime.com/b/project-complex-like-puzzle-pictured-as-word-project-puzzle-pieces-to-show-project-can-be-difficult-needs-164219955.jpg"
             alt="Project text image"
           />
-          <h2 className="display-4">WikiVerse Project</h2>
+          <h2 className="display-2">WikiVerse Project</h2>
           <p className="lead">
             Welcome to my WikiVerse project, below you will find a list of
             articles and other button functionalities.

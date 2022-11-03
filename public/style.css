@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(157, 157, 157);
 }
 
 main {
@@ -26,4 +26,36 @@ img {
   margin-left: 15%;
   border-radius: 10px;
   max-width:fit-content;
+}
+
+.container {
+  background-color: rgb(158, 158, 158);
+}
+
+.title {
+color: rgb(1, 1, 1);
+border-style: groove;
+}
+.author {
+  color: aliceblue;
+  border-style: groove;
+  
+}
+
+.published {
+  border-style: groove;
+}
+.content {
+  border-style: groove;
+}
+.tags {
+  border-style: groove;
+}
+.display-2 {
+  border-style: ridge;
+  border-color: black;
+  
+}
+.lead {
+  border-style: solid;
 }
