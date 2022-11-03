@@ -39,7 +39,7 @@ export const App = () => {
         tags: tags,
       }),
     });
-    const data = await response.json();
+    	await response.json();
   };
 
   useEffect(() => {
