@@ -52,7 +52,7 @@ export const App = () => {
         <div className="container">
           <img
             src="https://thumbs.dreamstime.com/b/project-complex-like-puzzle-pictured-as-word-project-puzzle-pieces-to-show-project-can-be-difficult-needs-164219955.jpg"
-            alt="Project text image"
+            alt="Project text on jigsaw puzzle image"
           />
           <h2 className="display-2">WikiVerse Project</h2>
           <p className="lead">
