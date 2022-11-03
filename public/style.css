@@ -19,3 +19,11 @@ align-content: center;
 
 
 }
+
+img {
+  margin-top: auto;
+  margin-bottom: 5%;
+  margin-left: 15%;
+  border-radius: 10px;
+  max-width:fit-content;
+}
