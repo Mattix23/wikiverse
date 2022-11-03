@@ -40,9 +40,11 @@ export const PagesList = ({pages, setPages}) => {
 	return <>
 		{articlePage ?
 			<div>
-			<h3>Author : {articlePage.title}</h3>
+			<h3>Title : {articlePage.title}</h3>	
+			<h3>Author : {articlePage.author.name}</h3>
 			<h3>Published: {articlePage.createdAt}</h3>
-			<h3>Content: {articlePage.content}</h3>	
+			<h3>Content: {articlePage.content}</h3>
+			<h3>Tags: {articlePage.tags.map((tag) => {return tag.name})}</h3>		
 			<button onClick={() => {deleteArticle(articlePage.slug)}}>Delete Article</button>
 			<button onClick={() => {goBack()}}>Back to Wiki List</button>	
 			</div>

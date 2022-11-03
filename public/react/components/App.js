@@ -35,7 +35,7 @@ export const App = () => {
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify(
-			{title: title, content: content, name: name, email: email, tags: tags} // our data TO CREATE here
+			{title: title, content: content, name: name, email: email, tags: tags} 
   		)
 	});
 	const data = await response.json();
