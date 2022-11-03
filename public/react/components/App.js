@@ -63,7 +63,7 @@ export const App = () => {
       </div>
       <div className="homePage">
         <h1>WikiVerse</h1>
-        <h2>An interesting 📚</h2>
+        <h2>Check out these articles</h2>
         {isAddingArticle ? (
           <div>
             <form onSubmit={handleSubmit}>
