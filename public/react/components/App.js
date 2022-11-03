@@ -47,7 +47,16 @@ export const App = () => {
 
 	return (
 		<main>	
-      <h1>WikiVerse</h1>
+			<div class="jumbotron jumbotron-fluid">
+  			<div class="container">
+    		<h1 class="display-4">WikiVerse Project</h1>
+    		<p class="lead">Welcome to my WikiVerse project, below you will find a list of articles and other button functionalities.</p>
+  			</div>
+			</div>
+			<div className='homePage'>
+
+				
+			<h1>WikiVerse</h1>
 			<h2>An interesting 📚</h2>
 			{
 				isAddingArticle ? 
@@ -80,6 +89,7 @@ export const App = () => {
 						onChange = {(e) => setTags(e.target.value)}
 						value={tags}/>
 						<button type='submit'>Submit Article</button>
+						<button onClick={() => {goBack()}}>Back to Wiki List</button>
 					</form>
 					
 				</div>
@@ -88,6 +98,8 @@ export const App = () => {
 			}
 			
 			<button onClick={() => setIsAddingArticle(!isAddingArticle)}> Create Article</button>
+			</div>
+
 
 			
 		</main>
