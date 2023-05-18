@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN npm install && npm run build
+RUN npm install
 
 EXPOSE 3000
 
